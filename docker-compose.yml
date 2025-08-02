@@ -6,6 +6,5 @@ services:
         environment:
             TZ: "Asia/Tokyo"
         working_dir: /var/www
-        privileged: true
         tty: true
         stdin_open: true
