@@ -1,0 +1,10 @@
+services:
+    node:
+        image: node:22.11.0
+        volumes:
+            - ./:/var/www
+        environment:
+            TZ: "Asia/Tokyo"
+        working_dir: /var/www
+        tty: true
+        stdin_open: true
