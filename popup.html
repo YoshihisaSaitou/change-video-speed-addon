@@ -2,15 +2,40 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <title>Sample Extension</title>
+    <title>Shift+G Speed Setting</title>
     <style>
-      body { font-family: sans-serif; padding: 10px; }
-      button { padding: 8px; }
+      body {
+        font-family: sans-serif;
+        padding: 10px;
+        width: 260px;
+      }
+      #controls {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+      input[type="number"] {
+        width: 60px;
+      }
+      .presets button {
+        margin: 2px;
+        padding: 4px 8px;
+      }
     </style>
   </head>
   <body>
-    <h1>こんにちは</h1>
-    <button id="clickMe">クリック</button>
+    <h1>Shift+G Speed</h1>
+    <div id="controls">
+      <input id="speedRange" type="range" min="0.1" max="10" step="0.1" />
+      <input id="speedInput" type="number" min="0.1" max="10" step="0.1" />
+    </div>
+    <div class="presets">
+      <button data-value="0.5">0.5</button>
+      <button data-value="1.0">1.0</button>
+      <button data-value="1.5">1.5</button>
+      <button data-value="2.0">2.0</button>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>

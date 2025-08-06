@@ -11,7 +11,7 @@
       "128": "icons/128.png"
     }
   },
-  "permissions": [],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
