@@ -21,10 +21,3 @@ document.querySelectorAll(".presets button").forEach((btn) => {
   btn.addEventListener("click", () => setValue(btn.dataset.value));
 });
 
-document.getElementById("openOptions").addEventListener("click", () => {
-  if (chrome.runtime.openOptionsPage) {
-    chrome.runtime.openOptionsPage();
-  } else {
-    window.open("options.html");
-  }
-});

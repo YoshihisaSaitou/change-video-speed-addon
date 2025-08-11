@@ -11,6 +11,7 @@
       "128": "icons/128.png"
     }
   },
+  "options_page": "options.html",
   "permissions": ["storage"],
   "content_scripts": [
     {
